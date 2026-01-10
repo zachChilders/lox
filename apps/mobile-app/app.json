@@ -16,14 +16,20 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.lox.mobile"
+      "bundleIdentifier": "com.lox.mobile",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs access to your camera to take photos for your notes."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.lox.mobile"
+      "package": "com.lox.mobile",
+      "permissions": [
+        "CAMERA"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
